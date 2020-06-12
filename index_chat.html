@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Baroom</title>
+    </head>
+    <body>
+
+        <div> 
+            <div>
+                <input type="text" id="username">
+            </div>
+            <div>
+                <textarea id="text" rows="5"></textarea>
+                <button id="send">send</button>
+            </div>
+            <div id="output"></div>
+        </div>
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAWSO5peRG-aYUOK2u2f3dZ5Jpc_f751OA",
+            authDomain: "baroom-e8aa7.firebaseapp.com",
+            databaseURL: "https://baroom-e8aa7.firebaseio.com",
+            projectId: "baroom-e8aa7",
+            storageBucket: "baroom-e8aa7.appspot.com",
+            messagingSenderId: "498829638801",
+            appId: "1:498829638801:web:9ee7b5dc20a8d256f85330",
+            measurementId: "G-K8RF45S80X"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+    </body>
+</html>
